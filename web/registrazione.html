@@ -7,29 +7,70 @@ and open the template in the editor.
 <html>
     <head>
         <title>Registrazione</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Luca Artizzu">
-        <meta name="keywords" content="FPW, progetto, html, java, CSS">
-        <meta name="description" content="Pagina di registrazione del progetto esercitazione">
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="author" content="Luca Artizzu"/>
+        <meta name="keywords" content="FPW, progetto, html, java, CSS"/>
+        <meta name="description" content="Pagina di registrazione del progetto esercitazione"/>
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
     </head>
     <body>
-        <div>
-            <h1>Writing is easy! <a href="index.html">Homepage</a></h1>
-        </div>
-        <div>
+        <header>
+            <h1 class="grassetto">Writing is easy!</h1>
+            <div id="logo">
+                <img title="Main Image" alt="Penna e foglio" src="img/homepage.jpg"
+                 width="150" height="150">
+            </div>
+        </header>
+        <nav>
+            <h2>Lista pagine</h2>
+            <ul>
+                <li><a href="https://google.com">Ti sei perso?</a></li>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="articoli.html">Articoli</a></li>
+                <li><a href="registrazione.html">Registrati</a></li>
+            </ul>
+        </nav>
+        <main>
             <form action="index.html" method="post">
-                <label for="id_nomeutente">Nome: </label>
-                <input type="text" name="nomeUtente" id="id_nomeutente" value="Mario Rossi"/>
+                <label for="id_nomeutente" class="grassetto">Nome: </label>
+                <input type="text" name="nomeUtente" id="id_nomeutente" placeholder="Nome e Cognome"/>
                 <br/>
                 <label for="id_username">Username: </label>
-                <input type="text" name="userName" id="id_username" value="username"/>
+                <input type="text" name="userName" id="id_username" placeholder="username"/>
                 <br/>
                 <label for="id_password">Password: </label>
                 <input type="password" name="password" id="id_password" value="oscurato"/>
                 <br/>
+                <label for="scrittore">Scrittore</label>
+                <input type="radio" name="tipo_utente" id="scrittore" value="scrittore"/>
+                <br/>
+                <label for="autore">Autore</label>
+                <input type="radio" name="tipo_utente" id="autore" value="autore"/>
+                <p class="grassetto">Colore preferito?</p>
+                <select size="5" multiple>
+                    <option value="red">Rosso</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Verde</option>
+                    <option value="black">Nero</option>
+                    <option value="white">Bianco</option>
+                    <option value="yellow">Giallo</option>
+                </select>
+                <br/>
                 <input type="submit" value="Submit"/>
             </form>
-        </div>
+            <div id="content">
+                <h2>Sottotitolo a caso</h2>
+                <h1>Titolo a caso</h1>
+                <h2>Sottotitolo a caso 2</h2>
+                <h2>Sottotitolo a caso 3</h2>
+                <div>
+                    <h2>Sottotitolo a caso 4</h2>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Fatto da...</p>
+        </footer>
     </body>
 </html>
