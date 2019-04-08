@@ -16,21 +16,30 @@ and open the template in the editor.
     </head>
     <body>
         <header>
-            <h1 class="grassetto">Writing is easy!</h1>
-            <div id="logo">
-                <img title="Main Image" alt="Penna e foglio" src="img/homepage.jpg"
-                 width="150" height="150">
+            <div id="logodiv">
+                <img id="logoimg" title="Main Image" alt="Penna e foglio" src="img/homepage.jpg">
+                <h1 id="logotitle">Writing is easy!</h1>
             </div>
         </header>
         <nav>
-            <h2>Lista pagine</h2>
             <ul>
-                <li><a href="https://google.com">Ti sei perso?</a></li>
                 <li><a href="index.html">Homepage</a></li>
+                <li><a href="https://google.com">Ti sei perso?</a></li>
                 <li><a href="articoli.html">Articoli</a></li>
                 <li><a href="registrazione.html">Registrati</a></li>
             </ul>
         </nav>
+        <div id="main_content">
+        <aside>
+            <div>
+                <ol>
+                    <li>Articolo 1</li>
+                    <li>Articolo 2</li>
+                    <li>Articolo 3</li>
+                    <li>Articolo 4</li>
+                </ol>
+            </div>
+        </aside>
         <main>
             <form action="index.html" method="post">
                 <label for="id_nomeutente" class="grassetto">Nome: </label>
@@ -59,16 +68,8 @@ and open the template in the editor.
                 <br/>
                 <input type="submit" value="Submit"/>
             </form>
-            <div id="content">
-                <h2>Sottotitolo a caso</h2>
-                <h1>Titolo a caso</h1>
-                <h2>Sottotitolo a caso 2</h2>
-                <h2>Sottotitolo a caso 3</h2>
-                <div>
-                    <h2>Sottotitolo a caso 4</h2>
-                </div>
-            </div>
         </main>
+        </div>
         <footer>
             <p>Fatto da...</p>
         </footer>

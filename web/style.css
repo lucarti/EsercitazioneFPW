@@ -8,13 +8,7 @@ and open the template in the editor.
     Author     : Roxas
 */
 
-body{
-    color: black;
-    font-size: 14px;
-    font-family: "Open Sans", Arial, sans-serif;
-}
-
-#logo{
+/*#logo{
     background-color: #1c345a;
 }
 
@@ -34,6 +28,134 @@ h1, h2, h3, h4, h5, h6 {
     color: #1c345a;
 }
 
+a{
+    color: #9e1616;
+}
+
+a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a[href="index.html"]{
+    color: #1c345a;
+}*/
+
+*{
+    box-sizing: border-box;
+    border-color: steelblue;
+}
+
+body{
+    color: white;
+    font-family: "Open Sans", Arial, sans-serif;
+    background-color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #35E0B1;
+}
+
+input{
+    background-color: teal;
+    color: white;
+}
+
+input:focus{
+    color: whitesmoke;
+    background-color: salmon;
+}
+
+a:visited{
+    color: red;
+}
+
+a:link{
+    color: white;
+}
+
+a:active{
+    color: white;
+}
+
+ol{
+    list-style-type: upper-roman;
+}
+
+/* Layout */
+
+header{
+    border-width: medium;
+    border-style: solid;
+}
+
+#logodiv{
+    height: 150px;
+    position: relative;
+}
+
+#logoimg{
+    height: 100%;
+}
+
+#logotitle {
+    display: inline;
+    position: absolute;
+}
+
+nav ul li{
+    list-style: none;
+    border-style: solid;
+    border-width: medium;
+    float: right;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+nav ul li:first-child{
+    width: 30%;
+}
+
+nav ul{
+    margin: 0px;
+    position: relative;
+}
+
+nav{
+    border-style: solid;
+    border-width: medium;
+    float: left;
+    width: 100%;
+}
 
 
+#main_content::after{
+    content: "";
+    clear: both;
+    display: table;
+}
 
+#main_content{
+    border-width: medium;
+    border-style: solid;
+}
+
+aside{
+    width: 20%;
+    float: left;
+}
+
+main{
+    width: 80%;
+    float: left;
+    border-style: solid;
+    border-width: medium;
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 0;
+}
+
+footer{
+    text-align: center;
+}
